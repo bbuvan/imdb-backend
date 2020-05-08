@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DotNetCoreIMDbCloneAPI.Controllers.ActorsController">
+    <Position X="14.25" Y="16.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABgAAAAAIAACAEAAACAAAAAAAAAAAg=</HashCode>
+      <FileName>Controllers\ActorsController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_movieDbRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Controllers.GenresController">
+    <Position X="14.25" Y="7.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>CACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\GenresController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="movieDbRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Controllers.MoviesController">
+    <Position X="14.25" Y="13.25" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>CAEAAAAQQAAAEAAAAAAAAQAAAAAIAAEAGAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\MoviesController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="movieDbRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Controllers.ProfilesController">
+    <Position X="14.25" Y="11.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>CAABIAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\ProfilesController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="movieDbRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Controllers.UsersController">
+    <Position X="14.25" Y="9.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAIAAAABAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Controllers\UsersController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="movieDbRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Models.Actor">
+    <Position X="25.25" Y="11.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAIAAAAAAAAAAAAAAIAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Entities\Actor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="MovieActors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Models.DBC" Collapsed="true">
+    <Position X="16.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAkAAAAgIAAAAAAAAAAAAAAAAAAgAAAAE=</HashCode>
+      <FileName>Entities\DBC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Models.Genre">
+    <Position X="20.5" Y="4.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAIAAAAAAAAAQAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Entities\Genre.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="MovieGenres" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Models.Movie">
+    <Position X="27" Y="6" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AACAQCAAAAAAAAAACgEAAAQAAQAAAAAAAAAAAgAAAAE=</HashCode>
+      <FileName>Entities\Movie.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="WatchLaters" />
+      <Property Name="MovieGenres" />
+      <Property Name="MovieActors" />
+      <Property Name="Ratings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Models.MovieActor">
+    <Position X="18" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAQAAIEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\MovieActor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Models.MovieGenre">
+    <Position X="21.75" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIgAAAAIAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\MovieGenre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Models.Rating">
+    <Position X="25" Y="9.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAgAAAAAAAgAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Rating.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Models.User">
+    <Position X="21" Y="8.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>EACAAAAAAAAAAAAAEwAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Ratings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Models.MovieCreationDto">
+    <Position X="18.25" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAQAAAAAAAgAAACAMAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MovieCreationDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Entities.WatchLater">
+    <Position X="24.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAgAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\WatchLater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Helpers.Hash">
+    <Position X="8" Y="2.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Hash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Helpers.Salt">
+    <Position X="8" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Salt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Models.DTOs.ActorDetailDto">
+    <Position X="21" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAEIAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ActorDetailDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Models.DTOs.AuthenticationDto">
+    <Position X="15.75" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AuthenticationDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Models.DTOs.MovieDetailDto">
+    <Position X="12.5" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AACAQAAAAAAAgAAACAMAAASAAQAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MovieDetailDto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Actors" />
+      <Property Name="Genres" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Models.DTOs.MovieListDTO">
+    <Position X="23.75" Y="0.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAQBAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MovieListDTO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Data" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DotNetCoreIMDbCloneAPI.Services.MovieDbRepository" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="8.75" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>IACBhAAAQAhAlAAACCIAAQABAABBAQCAUAAQABAAAAA=</HashCode>
+      <FileName>Services\MovieDbRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="DotNetCoreIMDbCloneAPI.Services.IMovieDbRepository">
+    <Position X="0.5" Y="8.75" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>IACBhAAAQAhAkAAACCIAAQABAABBAQCAUAAQABAAAAA=</HashCode>
+      <FileName>Services\IMovieDbRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
